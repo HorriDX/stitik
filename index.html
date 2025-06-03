@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord-style Posts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-comment-dots"></i> Discord Posts</h1>
+            <button id="newPostBtn" class="btn btn-primary">
+                <i class="fas fa-plus"></i> Новый пост
+            </button>
+        </header>
+
+        <div class="posts-container" id="postsContainer">
+            <!-- Посты будут загружаться здесь -->
+        </div>
+
+        <!-- Модальное окно для нового поста -->
+        <div id="postModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Создать новый пост</h2>
+                <form id="postForm">
+                    <div class="form-group">
+                        <label for="postTitle">Название:</label>
+                        <input type="text" id="postTitle" required class="input-field">
+                    </div>
+                    <div class="form-group">
+                        <label for="postImage">Изображение:</label>
+                        <input type="file" id="postImage" accept="image/*" class="input-field">
+                    </div>
+                    <div class="form-group">
+                        <label for="postText">Текст:</label>
+                        <textarea id="postText" rows="4" required class="input-field"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="postFile">Файл (опционально):</label>
+                        <input type="file" id="postFile" class="input-field">
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Опубликовать
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
