@@ -1,6 +1,6 @@
 // Конфигурация
 const REPO_OWNER = 'HorriDX';
-const REPO_NAME = '123ASD';
+const REPO_NAME = 'stitik';
 const TOKEN = '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'; // Создайте token с правами repo
 const BRANCH = 'main';
 const POSTS_FOLDER = 'posts';
